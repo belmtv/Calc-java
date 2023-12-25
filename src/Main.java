@@ -30,7 +30,7 @@ public class Main {
                 case "-":
                     newResult = numberOne - numberTwo;
                     break;
-                case "/s":
+                case "/":
                     newResult = numberOne / numberTwo;
                     break;
                 case "*":
