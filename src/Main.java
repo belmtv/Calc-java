@@ -17,11 +17,12 @@ public class Main {
         int numberOne = Integer.parseInt(result[0]);
         int numberTwo = Integer.parseInt(result[2]);
         String symbol = result[1];
+
         String[] sybmolArr = {"+", "-", "/", "*"};
+
         int newResult = 0;
 
         if (numberOne <= 10 && numberTwo <= 10 && Arrays.asList(sybmolArr).contains(symbol)) {
-
             switch (symbol) {
                 case "+":
                     newResult = numberTwo + numberOne;
@@ -29,7 +30,7 @@ public class Main {
                 case "-":
                     newResult = numberOne - numberTwo;
                     break;
-                case "/":
+                case "/s":
                     newResult = numberOne / numberTwo;
                     break;
                 case "*":
@@ -42,7 +43,5 @@ public class Main {
         } else {
             return "Так нельзя.";
         }
-
-
     }
 }
